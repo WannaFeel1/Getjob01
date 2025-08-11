@@ -279,10 +279,10 @@
                                 <div class="grid grid-cols-2 md:grid-cols-4 gap-2" id="languages">
                                     <label class="flex items-center"><input type="checkbox" value="ไทย" class="mr-2"> ไทย</label>
                                     <label class="flex items-center"><input type="checkbox" value="จีน" class="mr-2"> จีน</label>
-                                    <label class="flex items-center"><input type="checkbox" value="อังกฤษ" class="mr-2"> อังกฤษ</label>
+                                    <label class="flex items-center"><input type="checkbox" value="ไทยใหญ่" class="mr-2"> ไทยใหญ่</label>
                                     <label class="flex items-center"><input type="checkbox" value="พม่า" class="mr-2"> พม่า</label>
-                                    <label class="flex items-center"><input type="checkbox" value="ลาว" class="mr-2"> ลาว</label>
-                                    <label class="flex items-center"><input type="checkbox" value="เขมร" class="mr-2"> เขมร</label>
+                                    <label class="flex items-center"><input type="checkbox" value="อาข่า" class="mr-2"> อาข่า</label>
+                                    <label class="flex items-center"><input type="checkbox" value="ลาหู่" class="mr-2"> ลาหู่</label>
                                     <label class="flex items-center"><input type="checkbox" value="อื่นๆ" class="mr-2" id="languageOtherCheck"> อื่นๆ</label>
                                 </div>
                                 <input type="text" id="languageOther" placeholder="ระบุภาษาอื่นๆ" class="w-full border border-gray-300 rounded-lg px-4 py-2 mt-2 hidden focus:outline-none focus:border-primary">
@@ -725,10 +725,10 @@ document.addEventListener('DOMContentLoaded', () => {
             { id: 'languages', type: 'checkbox', required: true, label: { th: 'ภาษาที่สื่อสารได้', zh: '能溝通的語言' }, options: [
                 { value: 'ไทย', label: { th: 'ไทย', zh: '泰語' } },
                 { value: 'จีน', label: { th: 'จีน', zh: '中文' } },
-                { value: 'อังกฤษ', label: { th: 'อังกฤษ', zh: '英語' } },
+                { value: 'ไทยใหญ่', label: { th: 'ไทยใหญ่', zh: '傣語' } },
                 { value: 'พม่า', label: { th: 'พม่า', zh: '緬甸語' } },
-                { value: 'ลาว', label: { th: 'ลาว', zh: '老撾語' } },
-                { value: 'เขมร', label: { th: 'เขมร', zh: '高棉語' } },
+                { value: 'อาข่า', label: { th: 'อาข่า', zh: '阿卡語' } },
+                { value: 'ลาหู่', label: { th: 'ลาหู่', zh: '拉胡語' } },
                 { value: 'อื่นๆ', label: { th: 'อื่นๆ', zh: '其他' } }
             ]},
             { id: 'photo', type: 'file', required: false, label: { th: 'รูปถ่ายหน้าตรง', zh: '正面照片' }, accept: '.jpg,.jpeg,.png' }
@@ -784,7 +784,7 @@ document.addEventListener('DOMContentLoaded', () => {
             zh: {
                 titleChinese: '在地幫幫工',
                 titleThai: '幫助找工作幫助找人',
-                subtitle: '本地勞工連接平台',
+                subtitle: '本地幫工連接平台',
                 startBtnText: '開始使用',
                 aboutBtnText: '關於我們',
                 navTitle: '幫工管理系統',
@@ -1232,7 +1232,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         <p class="text-gray-600">
                             ${currentLanguage === 'th' 
                                 ? '「在地幫幫工」เป็นแพลตฟอร์มที่เชื่อมต่อนายจ้างกับแรงงานในพื้นที่ เพื่อช่วยให้การหางานและหาคนทำงานเป็นไปอย่างมีประสิทธิภาพ'
-                                : '「在地幫幫工」是一個連接雇主與當地勞工的平台，幫助提高找工作和找人才的效率'
+                                : '「在地幫幫工」是一個連接雇主與當地幫工的平台，幫助提高找工作和找人才的效率'
                             }
                         </p>
                         <div class="bg-blue-50 p-4 rounded-lg">
@@ -1240,7 +1240,7 @@ document.addEventListener('DOMContentLoaded', () => {
                                 ${currentLanguage === 'th' ? '✨ คุณสมบัติหลัก' : '✨ 主要功能'}
                             </h4>
                             <ul class="text-sm text-blue-700 space-y-1">
-                                <li>• ${currentLanguage === 'th' ? 'ระบบจัดการข้อมูลแรงงาน' : '勞工資料管理系統'}</li>
+                                <li>• ${currentLanguage === 'th' ? 'ระบบจัดการข้อมูลแรงงาน' : '幫工資料管理系統'}</li>
                                 <li>• ${currentLanguage === 'th' ? 'รองรับหลายภาษา (ไทย/จีน)' : '多語言支援 (泰語/中文)'}</li>
                                 <li>• ${currentLanguage === 'th' ? 'เชื่อมต่อ Google Sheets และ Drive' : '連接 Google Sheets 和 Drive'}</li>
                                 <li>• ${currentLanguage === 'th' ? 'ระบบค้นหาและกรองข้อมูล' : '搜索和篩選系統'}</li>
